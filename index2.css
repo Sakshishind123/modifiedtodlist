@@ -1,0 +1,98 @@
+body{
+background-image: url('./Homework\ Alerts.png');
+/* background-size: cover; */
+background-size: 50%;
+background-position: right;
+background-repeat: no-repeat;
+}
+
+
+h1 {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wrapper {
+    padding: 10px;
+   
+    text-align: center;
+    /* margin-top: 20px; */
+    margin: 100px auto;
+        display: block;
+       padding: 20px;
+       margin-right: 500px;
+    
+}
+
+#input{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+    
+}
+
+#btn {
+    padding: 10px 20px;
+    border-radius: 15%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for quick hover out */
+}
+
+@keyframes changeColor {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: lightpink;
+    }
+}
+
+#btn:hover {
+    animation: changeColor 1s forwards;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-between; /* Space between text and icons */
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #151313;
+    color: white;
+   
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between boxes */
+}
+
+.task-text {
+    font-size: 18px; /* Increase font size */
+    margin-right: auto; 
+    /* Push icons to the right */
+}
+
+/* Style for icons container */
+.task-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+/* Style for individual icons */
+.task-icons svg {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for icons */
+.task-icons svg:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}

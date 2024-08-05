@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca Light";
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+p, a, li {
+    font-size: 1.7rem;
+    color: #20262E;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-bars {
+    font-size: 3.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem; /* Position the icon on the left */
+}
+
+header {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially off-screen to the left */
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-first {
+    width: 50%;
+    max-width: 52rem;
+    min-width: 32rem;
+    /* background-color: #655DBB; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-second {
+    /* background-color: #3E54AC; */
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    background-color: #ECF2FF;
+    padding: 2rem;
+}
+
+.navbar-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    list-style: none;
+}
+
+.navbar-list a {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.navbar-list a:hover {
+    text-decoration: underline;
+    color: #3E54AC;
+}
+
+.active {
+    left: 0; /* Bring navbar into view */
+}
+
+.fa-square-xmark {
+    position: absolute;
+    top: 5%;
+    left: 85%; /* Adjust position of the close icon */
+    font-size: 3.2rem;
+    cursor: pointer;
+}
+
+body{
+    background-image: 'C:/Users/saksh/Downloads/JAVASCRIPT BY FREECODECAMP/To do app/magnum-master/Homework Alerts.png';
+    background-size: cover;
+    }
+    #congratulations {
+        width: 250px;
+        padding: 20px;
+        background-color: cadetblue;
+        color: black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left:  400px; /* Fixed positioning */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(62, 84, 172, 0.3); /* Added box-shadow */
+        position: relative; /* Necessary for animation using 'left' and 'top' */
+        animation: myAnimation 3s linear infinite; /* Applied the animation */
+        font-size: x-large;
+        font-style: italic;
+    font-weight: bold;
+    }
+    
+    @keyframes myAnimation {
+        0%   {background-color: rgb(185, 15, 15); left: 0px; top: 0px;}
+        25%  {background-color: rgb(73, 154, 19); left: 200px; top: 0px;}
+        /* 50%  {background-color: green; left: 200px; top: 100px;} */
+        /* 75%  {background-color: blue; left: 0px; top: 100px;}
+        100% {background-color: cadetblue; left: 0px; top: 0px;} */
+    }
+    
